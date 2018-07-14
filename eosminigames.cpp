@@ -15,11 +15,12 @@ void eosminigames::handleTransfer(account_name from, account_name to, extended_a
     if (from == _self)
     {
         // A withdrawal
+        print("Withdrawal of ", quantity, " to ", name{to}, " detected");
     }
     else if (to == _self)
     {
         // A deposit
-        print("Deposit of ", quantity, " from ", from, " detected");
+        print("Deposit of ", quantity, " from ", name{from}, " detected");
     }
     else
         // Why is this message even pushed to me?
