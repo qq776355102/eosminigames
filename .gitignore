@@ -1,0 +1,4 @@
+# Contract build files
+*.wast
+*.wasm
+*.abi
